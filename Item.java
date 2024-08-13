@@ -2,7 +2,12 @@ public class Item {
     public int chave;
     public String valor;
 
-    public void setChave(novaChave) {
+    public Item(int chave, String valor) {
+        this.chave = chave;
+        this.valor = valor;
+    }
+
+    public void setChave(int novaChave) {
         this.chave = novaChave;
     }
 
@@ -10,7 +15,7 @@ public class Item {
         return this.chave;
     }
 
-    public void setValor(novoValor) {
+    public void setValor(String novoValor) {
         this.valor = novoValor;
     }
 

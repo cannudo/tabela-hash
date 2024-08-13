@@ -12,4 +12,20 @@ public class Dicionario {
         itens = new Item[tamanho];
     }
 
+    public void adicionarItem(int chave, String valor) {
+        Item item = new Item(chave, valor);
+        itens[tamanho] = item;
+        tamanho++;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < tamanho; i++) {
+            sb.append(itens[i].getChave());
+            sb.append(": ");
+            sb.append(itens[i].getValor());
+            sb.append("\n");
+        }
+        return sb.toString();
+    }
 }
