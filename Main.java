@@ -10,6 +10,12 @@ public class Main {
         teste.adicionarItem(2, "dois");
         teste.adicionarItem(3, "tres");
         System.out.println(teste.toString());
+        for(int i : teste.getChaves()) {
+            System.out.println(i);
+        }
+        for(String s : teste.getValores()) {
+            System.out.println(s);
+        }
         System.out.println("Ponto de debug");
     }
 }
